@@ -10,23 +10,73 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="header-title"> Attendance List </h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">ADMIN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </ul>
+
+        <div class="page-title"> Add New Employeee</div>
         <div class="add-name">
                 <form>
-                    <div class="form-row">
+                    <div class="form-row" id="form-div">
                         <div class="form-group col-md-6">
                             <label for="inputFirstname">Firstname</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Firstname">
+                            <input type="text" class="form-control" id="inputFirstname" placeholder="Firstname">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputLastname">Lastname</label>
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Lastname">
+                            <input type="text" class="form-control" id="inputLastname" placeholder="Lastname">
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">ADD</button>
                 </form>
         </div>
+        
+        <div class="info-container">
+
+                <div class="page-title"> Attendance List</div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Delete</th>
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col"><input type="date" id="meeting-date" placeholder="Date" required></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <td>Delete</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="present" id="presentRadio" >
+                                <label class="form-check-label" for="inlineRadio1">Present</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="absent" id="absentRadio">
+                                <label class="form-check-label" for="inlineRadio2">Absent</label>
+                            </div>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
     </div> 
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
