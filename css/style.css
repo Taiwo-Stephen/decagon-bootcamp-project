@@ -1,0 +1,25 @@
+#btn-color{
+  color: #fff;
+  background-color: #007bff;
+  border-color: #fff;
+}
+#btn-color :hover{
+  color: #007bff;
+  background-color: #fff;
+  border-color: #fff;
+}
+#content-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+#pageTitle{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 10px;
+}  
+#pageTitle:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }

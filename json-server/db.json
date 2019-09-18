@@ -1,0 +1,51 @@
+{
+    "login": {
+        "username": "admin",
+        "password": "admin1234"
+      },
+
+    "employees": [
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 1
+      },
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 2
+      },
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 3
+      },
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 4
+      },
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 5
+      },
+      {
+        "firstname": "",
+        "lastname": "",
+        "position": "",
+        "company-id": "",
+        "id": 6
+      }
+    ]    
+  }
