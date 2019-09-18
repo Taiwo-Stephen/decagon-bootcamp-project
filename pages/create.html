@@ -11,8 +11,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
-                <img src="./images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Bootstrap
+          <img src="../images/logo.jpg" width="30" height="30" class="d-inline-block align-top" id="logo-image" alt="company's logo">
+          Bootstrap
                 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,11 +43,11 @@
 
     <div id="content-wrapper">
         <div class="btn" id="pageTitle"> Add Employee Biodata & Meeting Status</div>
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" id="form-data" novalidate>
             <div class="form-row">
                     <div class="col-md-3 mb-3">
                       <label for="validationCustom05">ID</label>
-                      <input type="text" class="form-control" id="inputID" placeholder="Company's Code" required>
+                      <input type="text" class="form-control" id="inputId" placeholder="Company's Code" required>
                     </div>
                 <div class="col-md-3 mb-3">
                     <label for="validationCustom01">First name</label>
@@ -71,24 +71,24 @@
                         <label for="inputGender">Gender</label>
                         <select id="inputGender" class="form-control">
                           <option selected>Choose...</option>
-                          <option id="female">Female</option>
-                          <option id="male">Male</option>
+                          <option >Female</option>
+                          <option >Male</option>
                         </select>
                       </div>
                       <div class="col-md-3 mb-3">
                             <label for="validationCustomDate">Date</label>
-                            <input type="date" class="form-control" id="inputPosition" placeholder="Date" required>
+                            <input type="date" class="form-control" id="inputDate" placeholder="Date" required>
                           </div>
                       <div class="col-md-3 mb-3">
                             <label for="inputAttendance">Attendance</label>
                             <select id="inputAttendance" class="form-control">
                               <option selected>Choose...</option>
-                              <option id="present">Present</option>
-                              <option id="absent">Absent</option>
+                              <option >Present</option>
+                              <option >Absent</option>
                             </select>
                           </div>
                 </div>
-                <button class="btn btn-outline-primary" type="submit">Submit form</button>
+                <button class="btn btn-outline-primary" id="submit-btn" type="submit">Submit form</button>
               </form>
              </div>       
         

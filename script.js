@@ -1,17 +1,43 @@
 $(function(){
+    $("#submit-btn").on("submit","#form-data", function(){
+        let formInput = {
+            "id" : $("#inputId").val(),
+            "firstname" : $("#inputFirstName").val(),
+            "lastname" : $("#inputLastName").val(),
+            "email" : $("#inputEmail").val(),
+            "position" : $("#inputPosition").val(),
+            "gender" : $("#inputGender").val(),
+            "date" : $("inputDate").val(),
+            "status" : $("#inputAttendance").val()
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:3000/login",
+            data: formInput,
+            dataType: "json",
+            encode: "true" 
+        })
+
+    .done(function(data) {
+        alert("Employee Biodata successfully created") 
+        $("#form-data").each(function(){
+            this.reset();
+        });
+    })
+    event.preventDefault();
+
     $("#log-btn").on("click",function(){
         const username = $("#username").val();
         const password = $("#password").val();
 
-        if (username === "" || password === "") {
-            $("#failed-login").append("*Fill in all empty space");
-            // alert("*fill all space") ;
-        } else if (username === "admin" && password === "admin1234") {
-            document.location.href="index.html"
-        } else {
-            $("#failed-login").append("*Incorrect login details");
-        }
+        $.ajax({
+            type: 'GET',
+            url: "http://localhost:3000/login"          
+           
+        });
     })
+    $("")
 })
 
 

@@ -6,46 +6,24 @@
 
     "employees": [
       {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 1
+        "id": 1,
+        "firstname": "John",
+        "lastname": "Mark",
+        "email": "johnmark@gmail.com",
+        "position": "Technical Officer",
+        "gender": "Male",
+        "date": "09/16/2019",
+        "status": "Present"        
       },
       {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 2
-      },
-      {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 3
-      },
-      {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 4
-      },
-      {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 5
-      },
-      {
-        "firstname": "",
-        "lastname": "",
-        "position": "",
-        "company-id": "",
-        "id": 6
+        "id": 2,
+        "firstname": "Mary",
+        "lastname": "Owen",
+        "email": "maryowen@gmail.com",
+        "position": "Sales Manager",
+        "gender": "Female",
+        "date": "09/16/2019",
+        "status": "Absent"
       }
     ]    
   }
