@@ -1,4 +1,41 @@
 $(document).ready(function() {
+
+       // The code below is the script for creating an employee biodata and adding it to the view.html page
+       $(document).on("submit","#form-data", function(event){
+        let firstnameValue = $("#inputFirstName").val(), lastnameValue = $("#inputLastName").val(),
+        emailValue = $("#inputEmail").val(), positionValue = $("#inputPosition").val(), genderValue = $("#inputGender").val(), 
+        dateValue = $("#inputDate").val(), statusValue = $("#inputAttendance").val();
+        if(firstnameValue === "" || lastnameValue === "" || emailValue === "" || positionValue === "" || dateValue === "" || genderValue === "" || statusValue === "choose..."){
+            alert("Field can not be empty")
+        } else{
+            let formInput = {
+                "firstname" : firstnameValue,
+                "lastname" : lastnameValue,
+                "email" : emailValue,
+                "position" : positionValue,
+                "gender" : genderValue,
+                "date" : dateValue,
+                "status" : statusValue
+            }
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:3000/employees",
+            data: formInput,
+            dataType: "json",
+            encode: "true" 
+        })
+
+    .done(function(data) {
+        alert("Employee Biodata successfully created")
+        alert(dateValue) 
+        $("#form-data").each(function(){
+            this.reset();
+        });
+    })    
+}
+    event.preventDefault();
+  }); 
     // The code below is for the view.html to view empolyee information
     $("#view-btn").click(function() {
   
@@ -28,7 +65,7 @@ $(document).ready(function() {
               "</td><td>" +
               result[i].status +
               "</td><td>" +
-              "<button type='button'><i class='fa fa-trash' id='trash' aria-hidden='true'></i></button><button type='button'><i class='fa fa-pencil-square-o' id='edit' aria-hidden='true'></i></button> </td></tr>";
+              "<button type='button' id='trash-btn><i class='fa fa-trash' id='trash' aria-hidden='true'></i></button><button type='button'><i class='fa fa-pencil-square-o' id='edit' aria-hidden='true'></i></button> </td></tr>";
           }
           output += "</tbody></table>";
           $("#viewList").html(output);
@@ -38,7 +75,7 @@ $(document).ready(function() {
     });
 
     // the code below is for the delete button in the view.html 
-    $("#trash").click(function(){
+    $("#trash-btn").click(function(){
         $.ajax({
             url: "http://localhost:3000/employees" + id,
             method: "DELETE",
@@ -74,62 +111,4 @@ $(document).ready(function() {
 
 //     })
 
-//     // The code below is the script for creating an employee biodata and adding it to the view.html page
-//     $(document).on("submit","#form-data", function(event){
-//         let firstnameValue = $("#inputFirstName").val(), lastnameValue = $("#inputLastName").val(),
-//         emailValue = $("#inputEmail").val(), positionValue = $("#inputPosition").val(), genderValue = $("#inputGender").val(), 
-//         dateValue = $("#inputDate").val(), statusValue = $("#inputAttendance").val();
-//         if(firstnameValue === "" || lastnameValue === "" || emailValue === "" || positionValue === "" || dateValue === "" || genderValue === "" || statusValue === "choose..."){
-//             alert("Field can not be empty")
-//         } else{
-//             let formInput = {
-//                 "firstname" : firstnameValue,
-//                 "lastname" : lastnameValue,
-//                 "email" : emailValue,
-//                 "position" : positionValue,
-//                 "gender" : genderValue,
-//                 "date" : dateValue,
-//                 "status" : statusValue
-//             }
-
-//         $.ajax({
-//             type: "POST",
-//             url: "http://localhost:3000/employees",
-//             data: formInput,
-//             dataType: "json",
-//             encode: "true" 
-//         })
-
-//     .done(function(data) {
-//         alert("Employee Biodata successfully created")
-//         alert(dateValue) 
-//         $("#form-data").each(function(){
-//             this.reset();
-//         });
-//     })    
-// }
-//     event.preventDefault();
-//   }); 
-
-// //   The code below is forviewing the attendance list, it shows the inforamtion added from the create.html
-// function populateEmployeeBiodata() {
-//     let employeeBiodata = "";    
-//     $.getJSON("http://localhost:3000/employees", function(result) {
-//       $.each(result, function(key, value) {
-//       $("#employeedetail").append($("<tr>")
-//                                 .append($("<td>").append(value.id))
-//                                 .append($("<td>").append(value.firstname))
-//                                 .append($("<td>").append(value.lastname))
-//                                 .append($("<td>").append(value.email))
-//                                 .append($("<td>").append(value.position))
-//                                 .append($("<td>").append(value.gender))
-//                                 .append($("<td>").append(value.date))
-//                                 .append($("<td>").append(value.status))
-//                                 .append($("<td>").append(`
-//                                     <i class="far fa-edit editTut" data-tutid=" ${value.id} "></i> 
-//                                     <i class="fas fa-trash deleteTut" data-tutid=" ${value.id} "></i>`        
-//                                     )));
-//         });
-//     });
-//   }
-// });
+//
