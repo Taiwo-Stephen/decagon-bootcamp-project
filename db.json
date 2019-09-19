@@ -1,0 +1,55 @@
+{
+  "login": {
+    "username": "admin",
+    "password": "admin1234"
+  },
+  "employees": [
+    {
+      "firstname": "john",
+      "lastname": "James",
+      "email": "johnjames@gmail.com",
+      "position": "accountant",
+      "gender": "Male",
+      "status": "Present",
+      "id": 1
+    },
+    {
+      "firstname": "john",
+      "lastname": "James",
+      "email": "johnjames@gmail.com",
+      "position": "accountant",
+      "gender": "Female",
+      "status": "Present",
+      "id": 2
+    },
+    {
+      "firstname": "Monday",
+      "lastname": "Okafor",
+      "email": "sandra@gmail.com",
+      "position": "Receptionist",
+      "gender": "Female",
+      "status": "Present",
+      "id": 3
+    },
+    {
+      "firstname": "john",
+      "lastname": "rose",
+      "email": "monday@gmail.com",
+      "position": "Receptionist",
+      "gender": "Male",
+      "date": "19/09/2019",
+      "status": "Present",
+      "id": 4
+    },
+    {
+      "firstname": "otto",
+      "lastname": "Friday",
+      "email": "monday@gmail.com",
+      "position": "Manager",
+      "gender": "Female",
+      "date": "2019-09-09",
+      "status": "Absent",
+      "id": 5
+    }
+  ]
+}

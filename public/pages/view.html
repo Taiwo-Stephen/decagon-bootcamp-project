@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title> Create Empolyee's Biodata</title>
 </head>
@@ -14,6 +15,7 @@
                 <img src="../images/logo.jpg" width="30" height="30" class="d-inline-block align-top" id="logo-image" alt="company's logo">
                 Bootstrap
                 </a>
+                <button type='button'></button>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,8 +44,11 @@
     </nav>
 
     <div id="content-wrapper">
-        <div class="btn" id="pageTitle">Employee Attendance </div>       
-    <table class="table table-striped">
+        <div class="btn" id="pageTitle">Employee Attendance </div>  
+        <button class="btn btn-outline-primary" id="view-btn" type="submit"> View Input</button>
+        <div id="viewList"></div>
+     
+    <!-- <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -54,28 +59,15 @@
                     <th scope="col">Gender</th>
                     <th scope="col">Date</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col">Update</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr> 
-                    <td>Delete</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Delete</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Delete</td>
-                    <td>Mark</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
+            <tbody id="employeeDetail">              
             </tbody>
-        </table>
+        </table> -->
     </div>
         
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-             <script src="script.js"></script>
+             <script src="../script.js"></script>
 </body>
 </html>

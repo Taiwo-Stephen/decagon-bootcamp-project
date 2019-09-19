@@ -45,10 +45,6 @@
         <div class="btn" id="pageTitle"> Add Employee Biodata & Meeting Status</div>
         <form class="needs-validation" id="form-data" novalidate>
             <div class="form-row">
-                    <div class="col-md-3 mb-3">
-                      <label for="validationCustom05">ID</label>
-                      <input type="text" class="form-control" id="inputId" placeholder="Company's Code" required>
-                    </div>
                 <div class="col-md-3 mb-3">
                     <label for="validationCustom01">First name</label>
                     <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
@@ -60,13 +56,13 @@
                 <div class="col-md-3 mb-3">
                     <label for="validationCustomEmail">Email</label>
                      <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-                </div>
-                </div>
-                <div class="form-row">
-                  <div class="col-md-3 mb-3">
+                </div>                
+                <div class="col-md-3 mb-3">
                     <label for="validationCustomPosition03">Position</label>
                     <input type="text" class="form-control" id="inputPosition" placeholder="Position" required>
-                  </div>                  
+                  </div> 
+                </div>
+                <div class="form-row">                 
                   <div class="col-md-3 mb-3">
                         <label for="inputGender">Gender</label>
                         <select id="inputGender" class="form-control">
@@ -76,9 +72,9 @@
                         </select>
                       </div>
                       <div class="col-md-3 mb-3">
-                            <label for="validationCustomDate">Date</label>
-                            <input type="date" class="form-control" id="inputDate" placeholder="Date" required>
-                          </div>
+                          <label for="validationCustomPosition03">Date</label>
+                          <input type="date" class="form-control" id="inputDate" placeholder="Date" required>
+                        </div>
                       <div class="col-md-3 mb-3">
                             <label for="inputAttendance">Attendance</label>
                             <select id="inputAttendance" class="form-control">
@@ -88,11 +84,12 @@
                             </select>
                           </div>
                 </div>
+                <p id="added-message"> </p>
                 <button class="btn btn-outline-primary" id="submit-btn" type="submit">Submit form</button>
               </form>
              </div>       
         
              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-             <script src="script.js"></script>
+             <script src="../script.js"></script>
 </body>
 </html>
