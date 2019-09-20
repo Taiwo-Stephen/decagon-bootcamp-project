@@ -4,6 +4,15 @@
     "password": "admin1234"
   },
   "employees": [
-    
+    {
+      "firstname": "Sandra",
+      "lastname": "James",
+      "email": "johnjames@gmail.com",
+      "position": "Receptionist",
+      "gender": "Female",
+      "date": "2019-09-11",
+      "status": "Present",
+      "id": 1
+    }
   ]
 }
