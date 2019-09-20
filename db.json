@@ -13,6 +13,16 @@
       "date": "2019-09-11",
       "status": "Present",
       "id": 1
+    },
+    {
+      "firstname": "john",
+      "lastname": "Okafor",
+      "email": "sandra@gmail.com",
+      "position": "Receptionist",
+      "gender": "Male",
+      "date": "2019-09-06",
+      "status": "Present",
+      "id": 2
     }
   ]
 }
